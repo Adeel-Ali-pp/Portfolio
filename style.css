@@ -1,0 +1,598 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 80px;
+    background-color: #bcc8e3;
+}
+.intro{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 180px;
+    text-align: center;
+}
+.intro h2{
+    font-size: 40px;
+}
+.intro p{
+    font-size: 20px;    
+    margin: 30px;
+}
+.intro button{
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid #3d52a0;
+    background: #8697c4;
+    color: #2d3e7b;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px #3d52a0;
+}
+.intro button:hover{
+transform: scale(107%);
+}
+.social-media {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.social-media ul li {
+    margin-bottom: 15px;
+}
+
+.social-media ul li a img {
+    width: 30px;
+    height: 30px;
+    display:block;
+}
+.about{
+    width: 100%;
+}
+.about1{
+    height: 200px;
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.about1 img{
+    height: 200px;
+    width: 350px;
+    margin-left: 20%;
+    border-radius: 5px;
+    margin-right: 200px;
+
+}
+.about1 p{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-right: 100px;
+    width: 900px;
+    rotate: -10deg;
+    text-align: center;
+}
+.about2 img{
+    height: 250px;
+    width: 180px;
+    rotate: -10deg;
+    margin-left: 20%;
+    margin-right: 100px;
+}
+.about2{
+    height: 300px;
+    width: 95%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about2 p{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 100px;
+    width: 400px;
+    text-align: center;
+}
+.point{
+    height: 40px;
+    width: 17px;
+    margin-left:  48%; 
+    margin-bottom: 60px;
+    overflow: hidden;   
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border: 2px solid #2d3e7b;
+    border-radius: 50px;
+}
+@keyframes pointmov{
+    0%{
+        top: 3px;
+        background-color: transparent;
+    }
+    30%{
+        top: 3px;
+        background-color: #2d3e7b; 
+    }
+    70%{
+        top: 65%;
+        background-color: #2d3e7b; 
+    }
+    100%{
+        top: 65%;
+        background-color: transparent;
+    }
+}
+.point1{
+    height: 10px;
+    width: 10px;
+    margin: 0;
+    animation: pointmov 3s 0s ease-in infinite ;
+    border-radius: 50%;
+    top: -20px;
+    position: relative;
+    background-color: #2d3e7b;
+    
+}
+.know{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.knowme{
+    height: 600px;
+    width:50%;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    overflow: scroll;
+}
+.knowme::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+.knowme h3{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: 2px underline  double #3d52a0;
+}
+.knowme p {
+    margin: 10px 40px;
+    font-size: 20px;
+}
+.skils{
+    height: 380px;
+    width: 40%;
+    padding: 30px;
+    text-align: center;
+}
+.skils h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: 2px underline double #3d52a0;
+}
+.skillist{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.skillist button{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #95a2c6;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #323c56;
+    cursor: pointer;
+}
+.skillist button:hover{
+    transform: scale(105%);
+}
+.sp1{
+    color: #435279;
+    font-size: 23px;
+    font-weight: bold;
+}
+.sp2{
+    font-weight: bold;
+}
+.knowme button{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #697db5;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px #272d3d;
+    cursor: pointer;
+    font-weight: bold;
+}
+.knowme button:hover{
+    transform: scale(105%);
+}
+.project{
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.project h2::after{
+    content: "";
+    height: 5px;
+    width: 2rem;
+    border-radius: 10px;
+    background-color: #2d3e7b;
+    position: absolute;
+    left: 49%;
+    top: 100%;
+}
+.project h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    position: relative;
+}
+.proj-show{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pimg{
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+    height: 300px;
+    width: 40%;
+}
+.pimg img{
+    height: 250px;
+    width: 400px;
+}
+.pinfo{
+    height: 300px;
+    width: 40%;
+    margin: 20px;
+    display: block;
+}
+.pinfo h3{
+    font-size: 30px;
+    font-style: oblique;
+    margin-bottom: 20px;
+}
+.pinfo p{
+    width: 600px;
+    margin-bottom: 20px;
+}
+.pinfo button{
+    height: 40px;
+    width: 110px;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2d3e7b;
+    font-weight: bold;
+    background-color: #8697c4;
+    border: 2px solid #2d3e7b;
+    box-shadow: 0px 0px 5px 2px #323c56;
+    cursor: pointer;
+}
+
+.pinfo button:hover{
+    transform: scale(105%);
+}
+.contact{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+.contact h3{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin: 10px;
+}
+.contact h3::after{
+    content: "";
+    height: 5px;
+    width: 2rem;
+    border-radius: 10px;
+    background-color: #2d3e7b;
+    position: absolute;
+    left: 49%;
+    top: 100%;
+}
+.form2{
+    height: 300px;
+    width: 500px;
+    background-color: #9eaaca;
+    border-radius: 4px;
+    padding: 15px;
+}
+.form1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+.form2 p{
+    font-size: 15px;
+}
+.form2 input{
+    height: 30px;
+    border-radius: 3px;
+    margin-top:5px ;
+    border: #2d3e7b;
+    box-shadow: 0px 0px 5px 2px #8697c4;
+    width: 490px;
+    margin-bottom: 10px;
+}
+.butn{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form2 button{ 
+height: 40px;
+width: 120px;
+color: #2d3e7b;
+font-weight: bold;
+background-color: #8697c4;
+border: 2px solid #2d3e7b;
+box-shadow: 0px 0px 5px 2px #323c56;
+cursor: pointer;
+border-radius: 4px;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    background-color: #272d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nam-info {
+    width: 50%;
+    text-align: center;
+    height: 300px;
+}
+.nam-info h2{
+    font-size: 40px;
+    margin: 20px;
+    margin-top: 50px;
+    text-shadow:2px 2px 5px #8e9fcc;
+}
+.nam-info p{
+    font-size: 10px;
+}
+.social ul{
+    list-style: none;
+    display: flex;
+}
+.social{
+    width: 50%;
+    text-align: center;
+    height: 300px;
+}
+.social ul{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.social1 ul li{
+height: 50px;
+width: 50px;
+margin: 15px;
+}
+.social1 ul li:hover{
+    transform: scale(111%);
+}
+.line{
+    height: 3px;
+    width: 80%;
+    background-color:black;
+}
+.Copyright{
+    margin-top: 50px;
+
+}
+.Copyright a{
+    color: #bcc8e3;
+    font-size: 30;
+    font-weight: bold;
+    text-decoration: 2px solid #000000;
+}
+.social h3{
+    font-size: 30px;
+    margin-top: 50px;
+}
+@media (max-width: 500px){
+    .intro{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .about1{
+        display: block;
+        width: 95%;
+        text-align: center;
+    }
+    .about1 img{
+        height: 150px;
+        width: 200px;
+        margin: 0;
+    }
+    .about1 p{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0px;
+        padding: 0;
+        rotate: 0deg;
+        width: 100%;
+    }
+    .about2{
+        display: block; width: 100%;
+        text-align: center;
+    }
+    
+    .about2 img{
+        height: 150px;
+        width: 210px;
+        rotate: 0deg;
+        margin: 0;
+    }
+    .about2 p{
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .knowme h3{
+        font-size: 20px;
+    }
+    .knowme p{
+        font-size: 10px;
+        width: 95%;
+        margin: 5px 10px;
+    }
+    .knowme{
+        margin: 5px;
+        padding: 0;
+        width: 95%;
+        height: 300px;
+    }
+    .know{
+        display: block;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+    }
+    .sp1{
+        font-size: 13px ;
+    }
+    .skillist{
+            width: 100%;
+    }
+    .skils{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+    .skils h3{
+        text-align: center;
+        width: 95%;
+    }
+    .project{
+        margin: 5px;
+        margin: 0;
+        height: 150px;
+    }
+    .project h2{
+        font-size: 20px;
+    }
+    .project p{
+        font-size: 12;
+    }
+    
+    .proj-show{
+        width: 100%;
+        display: block;
+    }
+    .pimg{
+        width: 90%;
+        height: 180px;
+        justify-content: center;
+    }
+    .pimg img{
+        margin: 0;
+        height: 150px;
+        width: 250px;
+    }
+    .pinfo{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+    }
+    .pinfo h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+    .pinfo p{
+        font-size: 13px;
+        margin: 5px;
+        text-align: center;
+        width: 95%;
+        height: 100px;
+    }
+    .form2{
+        width: 80%;
+    }
+    .form2 p{
+        font-size: 10px;
+    }
+    .form2 input{
+        width: 70%;
+    }
+    
+    .social ul{
+        display: block;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .social1 ul li{
+        height: 20px;
+        width: 20px;
+        margin: 5px;
+        margin-left: 40px;
+    }
+    .social{
+        width: 30%;
+        text-align: center;
+        height: 300px;
+        display: block;
+    }
+    .nam-info{
+        width: 70%;
+    }
+    .social-media ul li {
+        margin-bottom: 8px;
+    }
+    
+    .social-media ul li a img {
+        width: 15px;
+        height: 15px;
+        display:block;
+    }
+    .social-media{
+        left: 10px;
+    }
+}
